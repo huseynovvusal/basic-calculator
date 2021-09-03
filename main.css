@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Open sans", sans-serif;
+  background: #fff;
+}
+
+.calculator {
+  max-width: 40rem;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.calculator input {
+  text-align: right;
+  border: 2px solid rgb(94, 45, 144);
+  background: #fff;
+  color: rgb(94, 45, 144);
+  height: 5rem;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem 0.25rem 0 0;
+  pointer-events: none;
+}
+
+.calculator .keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.zero {
+  grid-column: 1 / 2 span;
+}
+.clear {
+  grid-column: 1 / 2 span;
+}
+
+.calculator .keys a {
+  color: #fff;
+  background-color: rgb(94, 45, 144);
+  border: 1px solid rgb(84, 35, 134);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  transition: 300ms;
+}
+
+.calculator .keys a:hover {
+  background: rgb(84, 35, 134);
+}
+
+.fa-backspace {
+  font-size: 1rem;
+}
