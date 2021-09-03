@@ -13,6 +13,7 @@ body {
   height: 100vh;
   font-family: "Open sans", sans-serif;
   background: #fff;
+  padding: 0 1rem;
 }
 
 .calculator {
